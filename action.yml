@@ -1,0 +1,7 @@
+name: Replacement identity action
+description: Controlled replacement repository marker
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "GHB_IDENTITY_REPLACEMENT_UNTRUSTED_20261027"
