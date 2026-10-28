@@ -1,0 +1,9 @@
+name: Merge-key parser probe
+description: Controlled inert YAML merge-key probe
+runs:
+  using: composite
+  x-step: &hidden_step
+    shell: bash
+    run: echo "GHB_ACTION_MERGE_KEY_ACCEPTED_20261027"
+  steps:
+    - <<: *hidden_step
